@@ -67,10 +67,8 @@ function listFoldersAndFiles() {
     sheet.autoResizeColumn(j);
   }
 
-  // Auto-resize header columns to fit the content
-  for (var k = 1; k <= headers.length; k++) {
-    sheet.autoResizeColumn(k);
-  }
+  // Manually set the width of the "File Path" column to ensure it fits the content
+  sheet.setColumnWidth(4, 700);
 
   // Set background color and border for the header row
   sheet.getRange(2, 1, 1, headers.length).setBackground('#3467eb').setFontColor('#FFFFFF').setFontWeight('bold').setBorder(true, true, true, true, true, true);
