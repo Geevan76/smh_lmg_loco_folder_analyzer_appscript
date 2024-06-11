@@ -3,7 +3,7 @@ function onOpen() {
   var ui = SpreadsheetApp.getUi();
   // Creates a custom menu in the Google Sheets UI
   // The custom menu is named "H10 Report Dashboard" and contains an item to trigger the listFoldersAndFiles function
-  ui.createMenu('🟢 H10 Report Dashboard')
+  ui.createMenu('🗂️ H10 Report Dashboard')
       .addItem('🟢 Update Folders & Files List', 'listFoldersAndFiles')
       .addToUi();
 }
